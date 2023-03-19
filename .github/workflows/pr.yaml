@@ -9,7 +9,8 @@ jobs:
       - name: start minikube
         id: minikube
         uses: medyagh/setup-minikube@latest
-      # now you can run kubectl to see the pods in the cluster
+        with:
+          cache: false
       - name: kubectl
         run: |
           kubectl cluster-info
