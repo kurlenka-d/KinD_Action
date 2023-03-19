@@ -10,7 +10,8 @@ jobs:
         with:
           version: "v0.11.1"
       - name: Testing
-        run: |
+        run: | >> 
+          "test.log"
           kubectl cluster-info
           kubectl get node -A
-          kubectl get pods -A
+          kubectl get pods -A 
