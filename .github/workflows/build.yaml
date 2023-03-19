@@ -12,4 +12,4 @@ jobs:
       - name: Testing
         run: |
           kubectl cluster-info
-          kubectl get node -a
+          kubectl get pods -A
